@@ -13,8 +13,8 @@ Author:   http://ebaker.me.uk
 
 global $_GET;
 
-if (!isset($_GET)) {
-  exit;
+if (!isset($_GET['val'])) {
+  $_GET['val'] = '';
 }
 
 require_once('../goproinc.php');
@@ -23,10 +23,13 @@ require_once('../settings.php');
 $gopro = new GoPro($pw);
 
 switch ($_GET['val']) {
-  case 'on':
-    $gopro->action('TURNON');
+  case '':
+    $gopro->action('SHOOT');
     break;
-  case 'off':
-    $gopro->action('TURNOFF');
+  case 'start':
+    $gopro->action('START');
+    break;
+  case 'stop':
+    $gopro->action('STOP');
     break;
 }

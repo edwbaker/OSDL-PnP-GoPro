@@ -2,7 +2,7 @@
   {"0":[
     {"name":"Power"},
     {"info_url":"http://osdl.myspecies.info/node/11"},
-    {"req_url":"a/0"},
+    {"req_url":"a/power.php"},
     {"type":"set_value"},
     {"allowed_values":[
       "on",
@@ -12,22 +12,20 @@
   {"1":[
     {"name":"TakePhoto"},
     {"info_url":"http://osdl.myspecies.info/node/11"},
-    {"req_url":"a/1"},
+    {"req_url":"a/shoot.php"},
     {"type":"request"}
   ]},
   {"2":[
-    {"name":"StartVideo"},
+    {"name":"Video"},
     {"info_url":"http://osdl.myspecies.info/node/11"},
-    {"req_url":"a/1"},
-    {"type":"request"}
+    {"req_url":"a/shoot.php"},
+    {"type":"set_valuet"},
+    {"allowed_values":[
+      "start",
+      "stop"
+    ]}
   ]},
   {"3":[
-    {"name":"StopVideo"},
-    {"info_url":"http://osdl.myspecies.info/node/11"},
-    {"req_url":"a/2"},
-    {"type":"request"}
-  ]},
-  {"4":[
     {"name":"Mode"},
     {"info_url":"http://osdl.myspecies.info/node/11"},
     {"req_url":"a/3"},
@@ -39,7 +37,7 @@
       "timelapse"
     ]}
   ]},
-  {"5":[
+  {"4":[
     {"name":"VerticalOrientation"},
     {"info_url":"http://osdl.myspecies.info/node/11"},
     {"req_url":"a/4"},
@@ -49,7 +47,7 @@
       "inverted"
     ]}
   ]},
-  {"6":[
+  {"5":[
     {"name":"VideoResolution"},
     {"info_url":"http://osdl.myspecies.info/node/11"},
     {"req_url":"a/5"},
